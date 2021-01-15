@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>DataCamp Light | Standalone example</title>
+    <link rel='shortcut icon' type='image/x-icon' href='https://www.datacamp.com/assets/favicon.ico' />
+    <style>
+        .exercise {
+            margin: 50px;
+        }
+        
+        [data-datacamp-exercise] {
+            visibility: hidden;
+        }
+    </style>
+
+    <script async src="https://cdn.datacamp.com/dcl-react-dev.js.gz"></script>
+</head>
+
+<body>
+
+    <div class="exercise">
+        <div class="OLI R Sandbox">
+            <h2>R Environment wtih OLI Data</h2>
+            <p>With this environment, you can work through the coding exercises in the <a class="" href="https://oli.cmu.edu/jcourse/lms/students/syllabus.do?section=729ec6a50a0001dc1fc85045eaf859e5">Open
+                    Learning Initiative's Probability & Statstics workbook.</a></p>
+            <p>Click inside the coding evironment to load all the data sets from OLI and wait for the yellow circle to turn green to know the evionment is ready to go. For example, the first activity works with the dataset <code>friends</code>. If you type
+                friends, you'll be able to access that data.</p>
+        </div>
+        <div data-no-lazy-load data-show-run-button data-datacamp-exercise data-lang="r" data-height="100">
+            <code data-type="pre-exercise-code">
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/friends.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/actor_2013.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/graduation.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/sdintuition.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m1_survey/drinking.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/nightlight.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/height.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/animals.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u2_summarizing_data/webcontent/r/olympics.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m2_body_image/body_image.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u3_producing_data/webcontent/r/student_survey.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m3_depression/depression.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/birthweight.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/sleep.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/guns.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/pregnancy.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/epa_fuel_econ.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/drinks.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m4_cell_phones/cell_phones.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/lbd1-1.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/lbd1-2.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/lbd1-3.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/lbd1-4.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/sleep2.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/beers.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/twins.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/seed.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/frustration.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/flicker.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m5_extra_credit/gradebook.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m6_low_birth_weight/low_birth_weight.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/_u5_inference/webcontent/r/baby-crying-IQ.RData'))
+                load(url('https://oli.cmu.edu/repository/webcontent/72712ec00a0001dc418a87e73e8ebb77/ctat_stattutor/webcontent/m7_auto_premiums/auto_premiums.RData'))
+            </code>
+            <code data-type="sample-code">
+
+            </code>
+        </div>
+    </div>
+
+</body>
+
+</html>
